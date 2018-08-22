@@ -22,8 +22,8 @@ onRouteChange = (route) => {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Page1 onRouteChange={this.onRouteChange}/>
-        <Page2 />
-        <Page3 />
+        <Page2 onRouteChange={this.onRouteChange}/>
+        <Page3 onRouteChange={this.onRouteChange}/>
       </div>
     );
   }
