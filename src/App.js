@@ -16,7 +16,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <Page1 />
+        <Page1 onRouteChange={this.onRouteChange}/>
         <Page2 />
         <Page3 />
       </div>
