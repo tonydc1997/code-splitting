@@ -7,7 +7,8 @@ const Page1 = () =>
       <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">Welcome to React</h1>
     </header>
-    <button onClick={}></button>
+    <button onClick={}>Page2</button>
+    <button onClick={}>Page3</button>
   </div>
 
 export default Page1;
