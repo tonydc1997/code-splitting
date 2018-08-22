@@ -9,6 +9,11 @@ class App extends Component {
       route: 'Page1'
     }
   }
+
+onRouteChange = (route) => {
+  this.setState({route: route});
+}
+
   render() {
     return (
       <div className="App">
