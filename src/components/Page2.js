@@ -11,4 +11,4 @@ const Page2 = ({ onRouteChange }) =>
     <button onClick={() => onRouteChange('Page3')}>Page3</button>
   </div>
 
-export default Page2;import React from 'react';
+export default Page2;
