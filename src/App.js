@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      route: 'Page1'
+      route: 'Page1',
+      component: ''
     }
   }
 
