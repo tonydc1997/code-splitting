@@ -15,18 +15,19 @@ class App extends Component {
 
 onRouteChange = (route) => {
   // No code splitting:
-  this.setState({route: route});
+  // this.setState({route: route});
   // With code splitting:
   if (route === 'Page1') {
     this.setState({route: route});
   } else if (route === 'Page2') {
     import('./components/Page2').then((Page2) => {
-      this.setState({route: route, component: Page2});
+      this.setState({route: route, component: Page2.default});
     })
   } else if (route === 'Page3') {
     import('./components/Page3').then((Page3) => {
-      this.setState({route: route, component: Page3});
+      this.setState({route: route, component: Page3.default});
     })
+  }
 }
 
   render() {
