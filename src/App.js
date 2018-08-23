@@ -38,7 +38,8 @@ onRouteChange = (route) => {
       const AsyncPage2 = AsyncComponent(()=> import('./components/Page2'));
       return <AsyncPage2 onRouteChange={this.onRouteChange}/>
     } else if (this.state.route === 'Page3') {
-      return <Page3 onRouteChange={this.onRouteChange}/>
+      const AsyncPage3 = AsyncComponent(()=> import('./components/Page3'));
+      return <AsyncPage3 onRouteChange={this.onRouteChange}/>
     }
       // if (this.state.route === 'Page1') {
       //   return <Page1 onRouteChange={this.onRouteChange}/>
