@@ -44,6 +44,12 @@ button:hover {
   color: white;
 }
 
+button:active {
+  transform: scale(1.15);
+  background-color: #222; /* Gray */
+  color: white;
+}
+
 .disabled {
   cursor: not-allowed;
   pointer-events: none;
