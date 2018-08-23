@@ -23,7 +23,10 @@ onRouteChange = (route) => {
     import('./components/Page2').then((Page2) => {
       this.setState({route: route, component: Page2});
     })
-  }
+  } else if (route === 'Page3') {
+    import('./components/Page3').then((Page3) => {
+      this.setState({route: route, component: Page3});
+    })
 }
 
   render() {
