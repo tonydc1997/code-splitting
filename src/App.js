@@ -9,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       route: 'Page1',
-      component: ''
+      component: null
     }
   }
 
