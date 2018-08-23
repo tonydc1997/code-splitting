@@ -32,18 +32,19 @@ onRouteChange = (route) => {
 }
 
   render() {
-    // if (this.state.route === 'Page1') {
-    //   return <Page1 onRouteChange={this.onRouteChange}/>
-    // } else if (this.state.route === 'Page2') {
-    //   return <Page2 onRouteChange={this.onRouteChange}/>
-    // } else if (this.state.route === 'Page3') {
-    //   return <Page3 onRouteChange={this.onRouteChange}/>
-    // }
-      if (this.state.route === 'Page1') {
-        return <Page1 onRouteChange={this.onRouteChange}/>
-      } else {
-        return <this.state.component onRouteChange={this.onRouteChange} />
-      }
+    if (this.state.route === 'Page1') {
+      return <Page1 onRouteChange={this.onRouteChange}/>
+    } else if (this.state.route === 'Page2') {
+      const AsyncPage2 = AsyncComponent(()=> import('./components/Page2'));
+      return <AsyncPage2 onRouteChange={this.onRouteChange}/>
+    } else if (this.state.route === 'Page3') {
+      return <Page3 onRouteChange={this.onRouteChange}/>
+    }
+      // if (this.state.route === 'Page1') {
+      //   return <Page1 onRouteChange={this.onRouteChange}/>
+      // } else {
+      //   return <this.state.component onRouteChange={this.onRouteChange} />
+      // }
   }
 }
 
