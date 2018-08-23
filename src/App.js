@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Page1 from './components/Page1';
-import Page2 from './components/Page2';
-import Page3 from './components/Page3';
+// import Page2 from './components/Page2';
+// import Page3 from './components/Page3';
 
 class App extends Component {
   constructor() {
@@ -14,7 +14,16 @@ class App extends Component {
   }
 
 onRouteChange = (route) => {
+  // No code splitting:
   this.setState({route: route});
+  // With code splitting:
+  if (route === 'Page1') {
+    this.setState({route: route});
+  } else if (route === 'Page2') {
+    import('./components/Page2').then((Page2) => {
+      this.setState({route: route, component: Page2});
+    })
+  }
 }
 
   render() {
