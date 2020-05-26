@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://tonydc1997.github.io/code-splitting",
   "dependencies": {
-    "gh-pages": "^1.2.0",
+    "gh-pages": "^2.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -16,5 +16,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
